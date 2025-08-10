@@ -10,7 +10,8 @@ function factorial(n) {
     if (n === 0 || n === 1) {
         return 1;
     }
-    return n * factorial(n - 1);
+    // ERROR INTENCIONAL: Devolver n + 1 en lugar de n * factorial(n - 1)
+    return n + 1;
 }
 
 /**
