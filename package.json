@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "start": "node index.js",
     "lint": "npx eslint ."
   },
@@ -16,7 +17,16 @@
   },
   "devDependencies": {
     "eslint": "^9.32.0",
-    "jest": "^30.0.5"
+    "jest": "^30.0.5",
+    "supertest": "^6.3.0"
   },
-  "type": "module"
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "extensionsToTreatAsEsm": [".js"],
+    "transform": {},
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  }
 }

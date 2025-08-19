@@ -1,8 +1,9 @@
+
 const { toFahrenheit, movingAverage, toCelsius } = require('../utils/math');
 
 describe('toFahrenheit', () => {
     test('Transformar a Fahrenheit 0C', () => {
-        expect(toFahrenheit(0)).toBe(50);
+        expect(toFahrenheit(0)).toBe(32.0);
     });
     test('Transformar a Fahrenheit 100C', () => {
         expect(toFahrenheit(100)).toBe(212.0);

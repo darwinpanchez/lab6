@@ -24,7 +24,10 @@ jobs:
 
     - name: Lint del codigo
       run: npm run lint
-    
+
+    - name: Ejecutar covertura
+      run: npm run test:coverage
+
     - name: Ejecutar pruebas
       run: npm test
     
