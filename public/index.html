@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Despliegue Continuo</title>
+        <title>Perfil — Clima & Conversión</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f0f0f0;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            header, footer {
+                background-color: #4a90e2;
+                color: white;
+                padding: 15px;
+            }
+            main {
+                background-color: white;
+                padding: 20px;
+                margin: 20px auto;
+                max-width: 500px;
+            }
+            h2 { color: #4a90e2; }
+            input, button { padding: 5px; margin: 5px; }
+            button { background-color: #4a90e2; color: white; border: none; }
+        </style>
     </head>
     <body>
-        <h1>¡Sitio estático!</h1>
+        <header>
+            <h1>Perfil — Clima & Conversión</h1>
+        </header>
         
-        <p id="out"></p>
+        <main>
+            <h2>Información Personal</h2>
+            <p><strong>Nombre:</strong> Darwin Panchez</p>
+            <p><strong>NRC:</strong> 123456</p>
+            <p><strong>Correo:</strong> juan.perez@ues.edu.sv</p>
+            <p>Estudiante de sistemas que le gusta programar y aprender tecnologías web.</p>
+            
+            <ul>
+                <li>Edad: 20 años</li>
+                <li>Ciudad: San Salvador</li>
+                <li>Hobby: Programar</li>
+            </ul>
+            
+            <h2>Clima</h2>
+            <input type="text" placeholder="Ciudad">
+            <button>Consultar</button>
+            
+            <h2>Conversión</h2>
+            <input type="number" placeholder="Grados">
+            <button>Convertir C° a F°</button>
+        </main>
+        
+        <footer>
+            <p>2024 - Mi Perfil</p>
+        </footer>
+        
         <script src="app.js"></script>
     </body>
 </html>

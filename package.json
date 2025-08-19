@@ -18,5 +18,5 @@
     "eslint": "^9.32.0",
     "jest": "^30.0.5"
   },
-  "type":"module"
+  "type": "module"
 }
